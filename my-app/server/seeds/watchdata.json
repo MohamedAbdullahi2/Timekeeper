@@ -2,24 +2,27 @@
   "watches": [
     {
       "name": "test 1",
-      "brand": "",
-      "price": 101,
-      "description": "",
-      "image": ""
+      "image": "101",
+      "description": "101",
+      "price": 101.0,
+      "brand": "101",
+      "category": "101"
     },
     {
       "name": "test 2",
-      "brand": "",
-      "price": 102,
-      "description": "",
-      "image": ""
+      "image": "102",
+      "description": "102",
+      "price": 102.0,
+      "brand": "102",
+      "category": "102"
     },
     {
       "name": "test 3",
-      "brand": "",
-      "price": 103,
-      "description": "",
-      "image": ""
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103"
     }
   ]
 }
