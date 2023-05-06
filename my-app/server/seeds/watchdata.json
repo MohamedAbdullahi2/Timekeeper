@@ -1,0 +1,25 @@
+{
+  "watches": [
+    {
+      "name": "test 1",
+      "brand": "",
+      "price": 101,
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "test 2",
+      "brand": "",
+      "price": 102,
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "test 3",
+      "brand": "",
+      "price": 103,
+      "description": "",
+      "image": ""
+    }
+  ]
+}
