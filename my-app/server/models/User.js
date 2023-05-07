@@ -1,6 +1,6 @@
 // const { Schema, model } = require("mongoose");
 const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 // validator package to check email and password validility
 const validator = require("validator");
