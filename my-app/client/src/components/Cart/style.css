@@ -59,25 +59,30 @@
     margin: 0 .5rem 1rem 0;
   }
   
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     .cart {
       position: relative;
       max-width: 100%;
       max-height: auto;
       box-shadow: none;
       background-color: inherit;
-    }
-  
-    /*
-    The cart's style sheet uses a media query to change 
-    the position of the cart on smaller screens. 
-    The position: relative declaration will return
-    the cart to its default position in the layout 
-    instead of being fixed in the top-right corner.
-    */
+    }*/
+   
     
-    .cart-closed {
-      position: relative;
-      margin: 0 auto;
+    
+
+  
+
+
+  @media screen and (max-width: 768px) {
+    .cart {
+      position: fixed;
+      top: 20px; /* adjust this value to position the icon vertically */
+      right: 20px; /* adjust this value to position the icon horizontally */
+      max-width: 100%;
+      max-height: auto;
+      box-shadow: none;
+      background-color: inherit;
     }
   }
+  
