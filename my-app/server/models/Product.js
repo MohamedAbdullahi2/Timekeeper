@@ -26,6 +26,11 @@ const watchSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  stock: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
 });
 
 module.exports = mongoose.model("Watch", watchSchema);
