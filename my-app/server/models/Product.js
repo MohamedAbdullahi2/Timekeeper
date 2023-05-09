@@ -24,9 +24,13 @@ const watchSchema = new mongoose.Schema({
   },
   model: {
     type: String,
-    required: true
+    required: true,
   },
   category: {
+    type: [String],
+    required: true,
+  },
+  tags: {
     type: [String],
     required: true,
   },
