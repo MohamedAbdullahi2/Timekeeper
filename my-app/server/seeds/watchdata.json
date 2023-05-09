@@ -1,12 +1,13 @@
 {
   "watches": [
     {
-      "name": "test 1",
+      "name": "Edifice",
       "image": "101",
-      "description": "101",
-      "price": 101.0,
-      "brand": "101",
-      "category": "101",
+      "description": "The EFB108D is the newest sport chronograph addition to the Edifice line. Styled with a simple motor sports design, this all stainless steel timepiece is 100 meter water resistant with a 3 year battery.",
+      "price": 138.89,
+      "brand": "Casio",
+      "model": "EFB-108D",
+      "category": "Sport",
       "stock": 101
     },
     {
@@ -17,6 +18,303 @@
       "brand": "102",
       "category": "102",
       "stock": 102
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
+    },
+    {
+      "name": "test 3",
+      "image": "103",
+      "description": "103",
+      "price": 103.0,
+      "brand": "103",
+      "category": "103",
+      "stock": 103
     },
     {
       "name": "test 3",

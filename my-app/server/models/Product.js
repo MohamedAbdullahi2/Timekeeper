@@ -22,8 +22,12 @@ const watchSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  category: {
+  model: {
     type: String,
+    required: true
+  },
+  category: {
+    type: [String],
     required: true,
   },
   stock: {
