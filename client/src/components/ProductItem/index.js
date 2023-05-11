@@ -6,6 +6,7 @@ import { pluralize } from "../../utils/helpers"
 import { useDispatch, useSelector } from 'react-redux';
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import "./ProductItem.css";
 
 function ProductItem(item) {
   // commented out in favor of redux logic
@@ -62,7 +63,7 @@ function ProductItem(item) {
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button className="btn" onClick={addToCart}>Add to cart</button>
     </div>
   );
 }

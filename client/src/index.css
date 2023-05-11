@@ -223,6 +223,7 @@ input:focus {
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
+  border: 10 solid black;
 }
 
 .px-2 {
@@ -241,8 +242,9 @@ input:focus {
 }
 
 .card {
-  width: 25%;
+  width: 20%;
   text-align: center;
+ 
 }
 
 .error-text {

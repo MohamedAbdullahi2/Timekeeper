@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/timekeeper-DB',
+mongoose.connect( process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/timekeeperDB',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    // useCreateIndex: true,
+    // useFindAndModify: false
   }
 );
 

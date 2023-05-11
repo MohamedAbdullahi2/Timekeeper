@@ -6,11 +6,13 @@ import Auth from '../../utils/auth';
 import './style.css';
 //commented out in favor of redux logic
 //import { useStoreContext } from '../../utils/GlobalState';
+import { useLazyQuery } from '@apollo/react-hooks';
+import { loadStripe } from '@stripe/stripe-js';
 import { useDispatch, useSelector } from 'react-redux';
 // stripe checkout api
 // to be used as part of the button checkout process
-import { loadStripe } from "@stripe/stripe-js";
-import { useLazyQuery } from '@apollo/react-hooks';
+// import { loadStripe } from "stripe";
+// import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from "../../utils/queries"
 
 // API key in context of REACT as testing key.

@@ -1,7 +1,8 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-// schema for watches, including watch name, which will be showing as the product name, brand and category are for searching purpose, so the user can search by brands and category such as classic, luxury, smartwatch, mechanical, quartz and so on.
-const watchSchema = new mongoose.Schema({
+const { Schema } = mongoose;
+
+const productSchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -44,4 +45,6 @@ const watchSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Watch", watchSchema);
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from '../components/Cart';
-import hiroImage from '../assets/hiro.jpg';
+// import hiroImage from '../assets/hiro.jpg';
 
 
 // Before being managed globally
@@ -25,7 +25,7 @@ import hiroImage from '../assets/hiro.jpg';
   return (
     <div className="home-container">
       <div className="hero-image">
-        <img src={hiroImage} alt="Hiro" />
+        {/* <img src={hiroImage} alt="Hiro" /> */}
       </div>
       <CategoryMenu />
       <ProductList />
