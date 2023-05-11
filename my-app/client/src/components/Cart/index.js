@@ -4,30 +4,19 @@ import { idbPromise } from "../../utils/helpers";
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
-//commented out in favor of redux logic
-//import { useStoreContext } from '../../utils/GlobalState';
+
 import { useDispatch, useSelector } from 'react-redux';
-// stripe checkout api
-// to be used as part of the button checkout process
+
 import { loadStripe } from "@stripe/stripe-js";
 import { useLazyQuery } from '@apollo/react-hooks';
 import { QUERY_CHECKOUT } from "../../utils/queries"
 
-// API key in context of REACT as testing key.
+
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
 
-  /*
-  You'll use the custom useStoreContext Hook to establish 
-  a state variable and the dispatch() function to update
-  the state. In this case, dispatch() will call the TOGGLE_CART
-  action. In the Cart functional component, write the following code:
-  */
-
-  // Commented out in favor of redux logic
-  //const [state, dispatch] = useStoreContext();
-
+  
   const state = useSelector((state) => {
     return state
   });
@@ -72,21 +61,7 @@ const Cart = () => {
     return sum.toFixed(2);
   }
 
-    // jsx component befor
-    //<div className="close">[close]</div>
-    // after <div className="close" onClick={toggleCart}>[close]</div>
-
-    /*we call the action and the resolver will give return 
-            case TOGGLE_CART:
-    return {
-      ...state,
-      cartOpen: !state.cartOpen
-    };
-    */
-   // at this poit state.cartOpen is !state.cartOpen
-
-   // call our QUERY_CHECKOUT query
-       // handle stripe checkout
+    
        function submitCheckout() {
         const productIds = [];
     
@@ -117,7 +92,7 @@ const Cart = () => {
 
     <div className="cart">
       <div className="close" onClick={toggleCart}>[close]</div>
-      <h2>Shopping Cart</h2>
+      <h2>Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map(item => (
@@ -140,7 +115,7 @@ const Cart = () => {
           <span role="img" aria-label="shocked">
             
           </span>
-          Your cart is empty! Start adding items to your cart
+          Your cart is empty! 
         </h3>
       )}
     </div>
@@ -148,27 +123,8 @@ const Cart = () => {
   );
 };
 
-/*
-    <div className="cart">
-      <div className="close" onClick={toggleCart}>[close]</div>
-      <h2>Shopping Cart</h2>
-      <div>
-          <CartItem item={{name:'Camera', image:'camera.jpg', price:5, purchaseQuantity:3}} />
-          <CartItem item={{name:'Soap', image:'soap.jpg', price:6, purchaseQuantity:4}} />
 
-          <div className="flex-row space-between">
-            <strong>Total: $0</strong>
-            {
-              Auth.loggedIn() ?
-                <button>
-                  Checkout
-                </button>
-                :
-                <span>(log in to check out)</span>
-            }
-          </div>
-        </div>
-    </div>
-    */
 
 export default Cart;
+
+

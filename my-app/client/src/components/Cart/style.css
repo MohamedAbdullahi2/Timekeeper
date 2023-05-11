@@ -68,9 +68,13 @@
       background-color: inherit;
     }*/
    
+    .uk-no-bullet {
+      list-style-type: none;
+    }
     
     
-
+  
+    
   
 
 
