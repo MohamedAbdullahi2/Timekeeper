@@ -15,6 +15,9 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from "../../utils/queries"
 import { FaShoppingCart } from 'react-icons/fa';
+
+import { FaTimes } from 'react-icons/fa';
+
 // API key in context of REACT as testing key.
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
@@ -117,9 +120,12 @@ const Cart = () => {
 
 
   return (
-
     <div className="cart">
-      <div className="close" onClick={toggleCart}>[close]</div>
+  <div className="close" onClick={toggleCart}>
+    <FaTimes />
+  </div>
+
+
       <h2>Shopping Cart</h2>
       {state.cart.length ? (
         <div>

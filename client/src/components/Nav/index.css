@@ -35,4 +35,8 @@
   }
 
 
-
+  .animated-icon:hover {
+    transform: scale(1.2); /* Increases the size of the icon on hover */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
+  }
+  
