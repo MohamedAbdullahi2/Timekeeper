@@ -14,7 +14,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { loadStripe } from "stripe";
 // import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from "../../utils/queries"
-
+import { FaShoppingCart } from 'react-icons/fa';
 // API key in context of REACT as testing key.
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
@@ -105,11 +105,12 @@ const Cart = () => {
 
     if (!state.cartOpen) {
       return (
-        <div className="cart-closed" onClick={toggleCart}>
-          <span
-            role="img"
-            aria-label="trash">🛒</span>
-        </div>
+      
+<div className="cart-closed" onClick={toggleCart}>
+  <FaShoppingCart />
+</div>
+
+
       );
     }
     
@@ -142,7 +143,7 @@ const Cart = () => {
           <span role="img" aria-label="shocked">
             
           </span>
-          Your cart is empty! Start adding items to your cart
+          Your cart is empty! 
         </h3>
       )}
     </div>

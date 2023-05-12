@@ -1,4 +1,4 @@
-header {
+/* header {
     padding: 1rem;
     background-color: #333;
     padding: 50px;
@@ -15,4 +15,24 @@ header {
   Link {
     color: #fff;
     text-decoration: none;
-  }  
+  }   */
+
+
+
+
+  .uk-navbar-item.uk-logo {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #023b14; /* Change the color to your desired value */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, sans-serif; /* Add your desired font name here */
+  
+  }
+
+
+
