@@ -1,0 +1,55 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 50px 0;
+  }
+  
+  footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:#1da1f2
+  }
+  
+  footer ul.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul.social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  footer ul.social-icons li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  footer ul.social-icons li a i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  
+  footer ul.social-icons li a i.fa-facebook {
+    background-color: #3b5998;
+  }
+  
+  footer ul.social-icons li a i.fa-twitter {
+    background-color: #1da1f2;
+  }
+  
+  footer ul.social-icons li a i.fa-instagram {
+    background-color: #e4405f;
+    color: #fff;
+  }
+  
+  

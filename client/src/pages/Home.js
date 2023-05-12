@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from '../components/Cart';
+import Footer from "../components/Footer/index"
 // import hiroImage from '../assets/hiro.jpg';
 
 
@@ -30,6 +31,7 @@ import Cart from '../components/Cart';
       <CategoryMenu />
       <ProductList />
       <Cart />
+      <Footer/>
     </div>
   );
 };
