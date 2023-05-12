@@ -1,6 +1,6 @@
 .watch-categories {
     display: flex;
-    background-image: url("../../assets/Image\ Nav3.jpg");
+    background-image: url("../../assets/pexels1.jpg");
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -9,7 +9,7 @@
   }
   
   .watch-categories:before {
-    background-image: url("../../assets/ImageNav2.png");
+    background-image: url("../../assets/pexels2.jpg");
     background-size: cover;
     background-position: center;
     content: "";
@@ -22,7 +22,7 @@
   }
   
   .watch-categories:after {
-    background-image: url("../../assets//ImageNav.png");
+    background-image: url("../../assets//pexels3.jpg");
     background-size: cover;
     background-position: center;
     content: "";
@@ -30,7 +30,7 @@
     left: -100%;
     position: absolute;
     top: 0;
-    transition: all 0.5s ease;
+    transition: all 5s ease;
     width: 100%;
   }
   
@@ -48,7 +48,7 @@
     font-size: 36px;
     font-weight: bold;
     animation-name: slideInLeft;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     background-color: rgb(218, 218, 206);
   }
