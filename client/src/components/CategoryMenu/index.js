@@ -111,7 +111,7 @@ function CategoryMenu({}) {
 
 
 
-    <h2>Choose a Category:</h2>
+    <h2>Category:</h2>
 {/* 
     <Slider
       dots={true}
