@@ -87,3 +87,12 @@ export function idbPromise(storeName, method, object) {
 
   });
 }
+
+export const filteredProducts = (products, searchModel, searchPrice) => {
+  return products.filter(product => {
+    const modelMatch = product.name.toLowerCase().includes(searchModel.toLowerCase());
+    const priceMatch = product.price.toString().toLowerCase().includes(searchPrice.toLowerCase());
+
+    return modelMatch && priceMatch;
+  });
+};

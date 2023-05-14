@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
 import { useQuery } from '@apollo/react-hooks';
 import { QUERY_CATEGORIES } from "../../utils/queries";
+import "../CategoryMenu/index.css"
+// import image1 from "../../assets/ImageNav2.png"
 
 // Provider Global Store import
 // commented out in favor of redux logic
@@ -68,20 +70,41 @@ function CategoryMenu({}) {
   // now is handleClick(item._id);
 
   return (
-    <div>
-      <h2>Category:</h2>
-      {categories.map(item => (
-        <button
-          key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
-        >
-          {item.name}
-        </button>
-      ))}
+
+<div class="wrapper">
+    <div className="watch-categories">
+      {/* your categories button code here */}
+
     </div>
-  );
+    <div className='slogan' >
+      <h2>Timeless style, just a click away!</h2>
+    </div>
+
+
+
+
+    {/* <h2>Choose a Category:</h2> */}
+{/* 
+    <Slider
+      dots={true}
+      infinite={true}
+      speed={500}
+      slidesToShow={1}
+      slidesToScroll={1}
+    > */}
+      {/* <div>
+        <img src={image1} alt="watch image 1" />
+      </div>
+      <div>
+        <img src="path/to/your/image2.jpg" alt="watch image 2" />
+      </div>
+      <div>
+        <img src="path/to/your/image3.jpg" alt="watch image 3" />
+      </div> */}
+    {/* </Slider> */}
+  </div>
+);
+
 }
 
 export default CategoryMenu;

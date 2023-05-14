@@ -9,6 +9,7 @@ import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
+import Header from "./components/Footer/footer"
 import Success from "./pages/Sucess";
 // redux hook and store
 import { Provider } from 'react-redux';
@@ -51,6 +52,7 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/success" component={Success} />
               <Route component={NoMatch} />
+              <Route exact path="/" component={Header} />
               
             </Switch>
           </Provider>
