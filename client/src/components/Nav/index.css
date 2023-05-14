@@ -5,7 +5,7 @@
 
   .uk-navbar-item.uk-logo {
     position: fixed;
-    top: 0;
+    top: 10;
     left: 50%;
     transform: translateX(-50%);
     font-size: 40px;
