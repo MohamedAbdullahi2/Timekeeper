@@ -8,7 +8,7 @@
     background-color: var(--light);
     overflow: auto;
     padding: .5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1rem rgba(61, 15, 226, 0.5);
     border-bottom-left-radius: .5rem;
   }
   
@@ -24,7 +24,8 @@
     top: .5rem;
     right: .5rem;
     cursor: pointer;
-    color: var(--tertiary);
+    color: blue;
+    font-size: 1.5rem;
   }
   
   .cart .close:hover {
@@ -37,7 +38,7 @@
     right: 1%;
     font-size: 3rem;
     cursor: pointer;
-    background-color: var(--light);
+    background-color: blue;
     border-radius: 50%;
     padding: .25rem;
     width: 50px;
@@ -49,8 +50,9 @@
   }
   
   .cart img {
-    width: 70px;
+    width: 110px;
     margin-right: 1rem;
+    height: 140px;
   }
   
   .cart input {

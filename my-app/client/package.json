@@ -19,16 +19,15 @@
     "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-icons": "^4.8.0",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "react-simple-chatbot": "^0.6.1",
     "redux": "^4.1.0",
-    "stripe": "^8.146.0"
+    "stripe": "^8.146.0",
+    "webpack": "^4.42.0"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

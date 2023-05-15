@@ -1,12 +1,24 @@
 .wrapper {
     background-image: url('../../assets/-1x-1.jpg');
-    /* background-image: url(../../assets//Omega-Aqua-Terra-Shades-cover-1024x819.jpg);
-    background-image: url(../../assets/OMEGA_21530462103001_close-up_bezel_and_crown-2-scaled-e1646702311839.jpg);
-    background-repeat: no-repeat; */
     background-size: cover;
     position: relative;
-    height: 800px; /* or adjust as per your image height */
-    /* width: 400; */
+    height: 800px;
+    animation-name: fade-in-out;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fade-in-out {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1.5;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   .watch-categories {
@@ -28,9 +40,22 @@
   }
   
   .slogan h2 {
-    color: #dfdfe0;
+    color: #8787db;
     font-size: 38px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 2px rgba(241, 241, 241, 0.8);
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes glow {
+    25% {
+      text-shadow: 1px 1px 2px rgba(90, 175, 133, 0.8);
+    }
+    50% {
+      text-shadow: 2px 2px 4px rgba(16, 147, 156, 0.8);
+    }
+    100% {
+      text-shadow: 1px 1px 2px rgba(65, 44, 187, 0.8);
+    }
   }
   

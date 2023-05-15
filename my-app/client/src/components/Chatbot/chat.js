@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider , styled } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 
 class Chatbot extends Component {
