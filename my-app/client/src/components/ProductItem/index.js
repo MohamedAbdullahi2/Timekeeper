@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import "../ProductList/index.css"
 
 function ProductItem(item) {
   const [showDetails, setShowDetails] = useState(false); // initialize showDetails state as false

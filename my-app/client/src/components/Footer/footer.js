@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // import CSS file
-import { FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import ChatbotFooter from '../Chatbot/chat';
 
 
@@ -22,9 +22,10 @@ const Footer = () => {
           <div className="col-md-3">
             <h3>Follow Us</h3>
             <ul className="social-icons">
-              <li><a href="https://www.facebook.com/"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.twitter.com/"><i className="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/"><FaInstagram /></a></li>
+              <li><a href="https://www.facebook.com/" className='facebook'><FaFacebook/></a></li>
+              <li><a href="https://www.twitter.com/" className='twitter'><FaTwitter/></a></li>
+              <li><a href="https://www.instagram.com/" className='instagram'><FaInstagram /></a></li>
+              <li><a href="https://www.youtube.com/"className='youtube'><FaYoutube /></a></li>
             </ul>
           </div>
           <div className="col-md-3">
@@ -32,9 +33,10 @@ const Footer = () => {
             <a className="twitter-timeline" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
           </div>  
         </div>
-        <ChatbotFooter />
-      </div>
-      
+        <div className='chat'>
+        <ChatbotFooter />   
+        </div>
+      </div> 
     </footer>
   );
 };

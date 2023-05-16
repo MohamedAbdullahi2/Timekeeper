@@ -44,4 +44,9 @@ const watchSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Watch", watchSchema);
+const Product = mongoose.model("Product", watchSchema);
+
+module.exports = Product;
+
+
+

@@ -3,33 +3,42 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  
+
+    /* justify-content: space-between; */
   }
   
   .flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 1rem;
   }
   
   .my-2 {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   
   .text-center {
     text-align: center;
+ 
+  
   }
   
   button {
-    background-color: #3f51b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e22dd;
     color: #fff;
     border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
+    border-radius: 1.4rem;
+    /* padding: 1rem; */
     font-size: 1rem;
     cursor: pointer;
+    width: 160px; /* Adjust the width as needed */
+    height: 50px;
   }
   
   button:hover {
@@ -38,19 +47,21 @@
   
   input[type="text"] {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.rem;
     border-radius: 0.25rem;
-    border: 1px solid #ccc;
+    /* border: 1px solid #71a2e2; */
     margin-right: 1rem;
-    width: 50%;
+    box-shadow: #82a3eb 5px 5px 2px 0px;
+    /* width: 50%; */
   }
   
   select {
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    width: 30%;
+    /* border: 1px solid #7ca3eb; */
+    box-shadow: #82a4e4 5px 5px 2px 0px;
+    /* width: 30%; */
   }
   
   h2 {
@@ -76,3 +87,42 @@
     }
   }
   
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card > div {
+    width: 90%; /* Adjust the width as needed */
+    margin-bottom: 40px; /* Add spacing between products */
+    /* border:1px solid black; */
+    border-radius: 8px;
+    /* background-color: #d2dae9; */
+  }
+  
+
+  .btn {
+    display: flex;
+    justify-content: center;
+   height: 80px;
+   background-color: #e8ecf5;
+   box-shadow: #d7dde7 5px 5px 2px 0px;
+   
+  }
+
+  .btn  button {
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+    background-color: #2f22dd;
+    color: #fff;
+    border: none;
+    border-radius: 1.4rem;
+    /* padding: 1rem; */
+    font-size: 1rem;
+    cursor: pointer;
+    width: 200px; /* Adjust the width as needed */
+    height: 50px;
+    padding: 20px;
+  }

@@ -98,8 +98,9 @@ function ProductList() {
         <>
           {renderProducts(filteredProducts)}
           {filteredProducts.length > 25 && (
-            <div className="text-center">
-              <button onClick={handleShowMoreClick}>{showMore ? 'Show Less' : 'Show More'}</button>
+            
+            <div className="btn">
+              <button className="btn-more"onClick={handleShowMoreClick}>{showMore ? 'Show Less' : 'Show More'}</button>
             </div>
           )}
         </>

@@ -12,11 +12,15 @@
 
 * {
   box-sizing: border-box;
+ 
 }
 
 html,
 body {
   min-height: 100%;
+ /* background-color: aliceblue;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 /* .home-container {
