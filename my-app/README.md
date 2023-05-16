@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Timekeeppers- E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Timekeepers is an e-commerce website built using the MERN stack and GraphQL, designed to provide an exceptional shopping experience for watch enthusiasts. This repository contains all the code and resources required to set up and deploy the TimeKeepers website..
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User Registration and Authentication: Users can create accounts, log in, and manage their    profiles.
+- Product Catalog: Display a wide range of watches with detailed information and images.
+- Shopping Cart: Users can add watches to their cart, update quantities, and proceed to checkout.
+- Payment Processing: Integration with a secure payment gateway for seamless transactions.
+- Reviews and Ratings: Users can leave reviews and ratings for watches they have purchased.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements
 
-### `npm test`
+Before running the application, ensure you have the following requirements installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14.17.0 or higher)
+- MongoDB (v4.4.0 or higher)
+- npm (v7.20.3 or higher)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   git clone https://github.com/MohamedAbdullahi2/Timekeeper
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. cd Timekeepers 
 
-### `npm run eject`
+3.   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Visit http://localhost:3000 in your web browser to access the Timekeepers website.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions to Timekeepers are welcome and encouraged! If you find any bugs or have suggestions for improvements, please open an issue on the GitHub repository. If you would like to contribute code, please follow these guidelines:
 
-## Learn More
+Fork the repository.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a new branch for your feature/fix:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git checkout -b feature/your-feature-name
 
-### Code Splitting
+Commit your changes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+git commit -am 'Add your commit message'
 
-### Analyzing the Bundle Size
+Push the branch to your forked repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+git push origin feature/your-feature-name
 
-### Making a Progressive Web App
+Open a pull request on the main repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+Timekeepers is released under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Team Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Timekeepers was developed by Team Build, a group of dedicated and skilled developers passionate about creating high-quality web applications. The team members are:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mohamed Abdullahi 
+Haozhe Huang
+Slava S
+Abenezer Mengesha
+Felix Mandungu
+ 
+We worked collaboratively to bring Timekeepers to life. 

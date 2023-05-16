@@ -12,11 +12,15 @@
 
 * {
   box-sizing: border-box;
+ 
 }
 
 html,
 body {
   min-height: 100%;
+ /* background-color: aliceblue;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 /* .home-container {
@@ -251,9 +255,12 @@ input:focus {
   color: var(--error);
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
-  }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjust properties for mobile screens */
 }
 
+/* Desktop Styles */
+@media (min-width: 769px) {
+  /* Adjust properties for desktop screens */
+}

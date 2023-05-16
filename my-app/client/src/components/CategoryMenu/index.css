@@ -1,4 +1,5 @@
 .wrapper {
+<<<<<<< HEAD
     background-image: url('../../assets/-1x-1.jpg');
     background-size: cover;
     position: relative;
@@ -19,6 +20,18 @@
     100% {
       opacity: 1;
     }
+=======
+    background-image: url('../../assets/watch111.jpeg');
+    /* background-image: url(../../assets//Omega-Aqua-Terra-Shades-cover-1024x819.jpg);
+    background-image: url(../../assets/OMEGA_21530462103001_close-up_bezel_and_crown-2-scaled-e1646702311839.jpg);
+    background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+    height: 800px; /* or adjust as per your image height */
+    /* box-shadow: blue; */
+    box-shadow: #A3A3A3 5px 5px 2px 0px;
+    /* width: 400; */
+>>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
   }
   
   .watch-categories {

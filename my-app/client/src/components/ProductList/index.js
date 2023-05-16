@@ -64,7 +64,9 @@ function ProductList() {
   function renderProducts(products) {
     return (
       <div className="container">
-        {products.slice(0, showMore ? products.length : 10).map((product) => (
+      {products
+        .slice(0, showMore ? products.length : 10)
+        .map((product) => (
           <ProductItem
             key={product._id}
             _id={product._id}
@@ -72,9 +74,12 @@ function ProductList() {
             name={product.name}
             price={product.price}
             quantity={product.quantity}
+            className="image-style" // Place className attribute here
           />
         ))}
-      </div>
+    </div>
+    
+    
     );
   }
 
@@ -98,8 +103,9 @@ function ProductList() {
         <>
           {renderProducts(filteredProducts)}
           {filteredProducts.length > 25 && (
-            <div className="text-center">
-              <button onClick={handleShowMoreClick}>{showMore ? 'Show Less' : 'Show More'}</button>
+            
+            <div className="btn">
+              <button className="btn-more"onClick={handleShowMoreClick}>{showMore ? 'Show Less' : 'Show More'}</button>
             </div>
           )}
         </>

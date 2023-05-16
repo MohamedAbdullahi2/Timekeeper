@@ -3,9 +3,25 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: center;
+    align-items: center; */
+    align-content: space-around;
+    /* background-color: #2e22dd; */
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: #d7dde7;
+    border-color: #82a4e4;
+  
+
+    /* justify-content: space-between; */
+  }
+  .image-style {
+    width: 200px; /* Adjust the width as per your requirements */
+    height: 200px; /* Adjust the height as per your requirements */
+    /* Additional styles as needed */
   }
   
+<<<<<<< HEAD
   .flex-row button select {
     display: flex;
     /* flex-direction: row; */
@@ -18,21 +34,49 @@
     margin: 2rem 0;
     font-size: 20px;
     color: #1a237e;
+=======
+  
+  
+
+
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 1rem;
+  }
+  
+  .my-2 {
+    margin: 1rem 0;
+>>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
   }
   
   .text-center {
     text-align: center;
+ 
+  
   }
   
   button {
+<<<<<<< HEAD
     /* display: flex; */
     background-color: #3f51b5;
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e22dd;
+>>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
     color: #fff;
     border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
+    border-radius: 1.4rem;
+    /* padding: 1rem; */
     font-size: 1rem;
     cursor: pointer;
+    width: 160px; /* Adjust the width as needed */
+    height: 50px;
   }
   
   button:hover {
@@ -42,10 +86,16 @@
   input[type="text"] {
 display: flex;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.rem;
     border-radius: 0.25rem;
+<<<<<<< HEAD
     border: 1px solid #ccc;
     margin-right: 2rem;
+=======
+    /* border: 1px solid #71a2e2; */
+    margin-right: 1rem;
+    box-shadow: #82a3eb 5px 5px 2px 0px;
+>>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
     /* width: 50%; */
   }
   
@@ -54,7 +104,12 @@ display: flex;
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 0.25rem;
+<<<<<<< HEAD
     border: 1px solid #ccc;
+=======
+    /* border: 1px solid #7ca3eb; */
+    box-shadow: #82a4e4 5px 5px 2px 0px;
+>>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
     /* width: 30%; */
   }
   
@@ -81,3 +136,44 @@ display: flex;
     }
   }
   
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card > div {
+    width: 90%; /* Adjust the width as needed */
+    margin-bottom: 40px; /* Add spacing between products */
+    /* border:1px solid black; */
+    border-radius: 8px;
+    /* background-color: #d2dae9; */
+  }
+  
+
+  .btn {
+    display: flex;
+  justify-content: center;
+  align-content: center;
+   height: 80px;
+   background-color: #e8ecf5;
+   box-shadow: #d7dde7 5px 5px 2px 0px;
+   padding : 50px 50px, 50px  50px;
+   
+  }
+
+  .btn  button {
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+    background-color: #2f22dd;
+    color: #fff;
+    border: none;
+    border-radius: 1.4rem;
+    /* padding: 1rem; */
+    font-size: 1rem;
+    cursor: pointer;
+    width: 200px; /* Adjust the width as needed */
+    height: 50px;
+    padding: 20px;
+  }

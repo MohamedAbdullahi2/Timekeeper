@@ -66,9 +66,6 @@ function CategoryMenu({}) {
     });
   };
 
-  // on click before global state was setCategory(item._id);
-  // now is handleClick(item._id);
-
   return (
 
 <div class="wrapper">
@@ -79,29 +76,6 @@ function CategoryMenu({}) {
     <div className='slogan' >
       <h2>Timeless style, just a click away!</h2>
     </div>
-
-
-
-
-    {/* <h2>Choose a Category:</h2> */}
-{/* 
-    <Slider
-      dots={true}
-      infinite={true}
-      speed={500}
-      slidesToShow={1}
-      slidesToScroll={1}
-    > */}
-      {/* <div>
-        <img src={image1} alt="watch image 1" />
-      </div>
-      <div>
-        <img src="path/to/your/image2.jpg" alt="watch image 2" />
-      </div>
-      <div>
-        <img src="path/to/your/image3.jpg" alt="watch image 3" />
-      </div> */}
-    {/* </Slider> */}
   </div>
 );
 
