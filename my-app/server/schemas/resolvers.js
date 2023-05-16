@@ -58,15 +58,22 @@ const resolvers = {
 
         checkout: async (parent, args, context) => {
             const url = new URL(context.headers.referer).origin;
-          
+
+            console.log(args)
+
+            // 6462d915c99c09f8dc3fc71b
+
+            // const product = await Product.findById(args.products[0]
+
+            // console.log(products)
             try {
-              const order = await Order.findById(args.orderId).populate('products');
-            
-              if (!order) {
-                throw new Error('Order not found');
-              }
-            
-              const { products } = order;
+            //   const order = await Order.findById(args.orderId).populate('products');
+            const products = await Product.find().where('_id').in(args.products).exec();
+            //   if (!order) {
+            //     throw new Error('Order not found');
+            //   }
+              console.log(products)
+            //   const { products } = order;
             
               const line_items = [];
             
@@ -100,14 +107,64 @@ const resolvers = {
               // Redirect to the Stripe checkout session
               return {
                 session: session.id,
-                redirectUrl: session.url,
+                // redirectUrl: session.url,
               };
             } catch (error) {
               throw new Error('Error in checkout');
             }
           }
            
-
+        // checkout: async (parent, args, context) => {
+        //     const url = new URL(context.headers.referer).origin;
+          
+        //     try {
+        //       const order = await Order.findById(args.orderId).populate('products');
+            
+        //       if (!order) {
+        //         throw new Error('Order not found');
+        //       }
+            
+        //       const { products } = order;
+            
+        //       const line_items = [];
+            
+        //       for (let i = 0; i < products.length; i++) {
+        //         const product = await stripe.products.create({
+        //           name: products[i].name,
+        //           description: products[i].description,
+        //           images: [`${url}/images/${products[i].image}`],
+        //         });
+            
+        //         const price = await stripe.prices.create({
+        //           product: product.id,
+        //           unit_amount: products[i].price * 100,
+        //           currency: 'usd',
+        //         });
+            
+        //         line_items.push({
+        //           price: price.id,
+        //           quantity: 1,
+        //         });
+        //       }
+            
+        //       const session = await stripe.checkout.sessions.create({
+        //         payment_method_types: ['card'],
+        //         line_items,
+        //         mode: 'payment',
+        //         success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
+        //         cancel_url: `${url}/`,
+        //       });
+            
+        //       // Redirect to the Stripe checkout session
+        //       return {
+        //         session: session.id,
+        //         redirectUrl: session.url,
+        //       };
+        //     } catch (error) {
+        //       throw new Error('Error in checkout');
+        //     }
+        //   }
+          
         // checkout: async (parent, args, context) => {
         //     const url = new URL(context.headers.referer).origin;
         //     const order = new Order({ products: args.products });

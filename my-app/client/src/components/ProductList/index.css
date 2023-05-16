@@ -3,11 +3,29 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    align-content: space-around;
+    /* background-color: #2e22dd; */
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: #d7dde7;
+    border-color: #82a4e4;
   
 
     /* justify-content: space-between; */
   }
+  .image-style {
+    width: 200px; /* Adjust the width as per your requirements */
+    height: 200px; /* Adjust the height as per your requirements */
+    /* Additional styles as needed */
+  }
   
+  
+  
+
+
+
   .flex-row {
     display: flex;
     flex-direction: row;
@@ -104,10 +122,12 @@
 
   .btn {
     display: flex;
-    justify-content: center;
+  justify-content: center;
+  align-content: center;
    height: 80px;
    background-color: #e8ecf5;
    box-shadow: #d7dde7 5px 5px 2px 0px;
+   padding : 50px 50px, 50px  50px;
    
   }
 
