@@ -21,20 +21,6 @@
     /* Additional styles as needed */
   }
   
-<<<<<<< HEAD
-  .flex-row button select {
-    display: flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    margin-bottom: 2rem;
-  }
-  
-  .my-2 {
-    margin: 2rem 0;
-    font-size: 20px;
-    color: #1a237e;
-=======
   
   
 
@@ -50,7 +36,6 @@
   
   .my-2 {
     margin: 1rem 0;
->>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
   }
   
   .text-center {
@@ -60,15 +45,10 @@
   }
   
   button {
-<<<<<<< HEAD
-    /* display: flex; */
-    background-color: #3f51b5;
-=======
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2e22dd;
->>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
     color: #fff;
     border: none;
     border-radius: 1.4rem;
@@ -88,14 +68,9 @@ display: flex;
     padding: 0.5rem;
     font-size: 1.rem;
     border-radius: 0.25rem;
-<<<<<<< HEAD
-    border: 1px solid #ccc;
-    margin-right: 2rem;
-=======
     /* border: 1px solid #71a2e2; */
     margin-right: 1rem;
     box-shadow: #82a3eb 5px 5px 2px 0px;
->>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
     /* width: 50%; */
   }
   
@@ -104,12 +79,8 @@ display: flex;
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 0.25rem;
-<<<<<<< HEAD
-    border: 1px solid #ccc;
-=======
     /* border: 1px solid #7ca3eb; */
     box-shadow: #82a4e4 5px 5px 2px 0px;
->>>>>>> 6bd9a412c8f6f91bf98832738975f4f1123d29f4
     /* width: 30%; */
   }
   
