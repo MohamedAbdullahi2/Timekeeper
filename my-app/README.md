@@ -17,7 +17,13 @@
 - Product Catalog: Display a wide range of watches with detailed information and images.
 - Shopping Cart: Users can add watches to their cart, update quantities, and proceed to checkout.
 - Payment Processing: Integration with a secure payment gateway for seamless transactions.
-- Reviews and Ratings: Users can leave reviews and ratings for watches they have purchased.
+
+<img width="903" alt="image" src="https://github.com/MohamedAbdullahi2/Timekeeper/assets/118404373/b17209e7-6762-40d6-a208-13cd3ddbcb6f">
+
+<img width="903" alt="image" src="https://github.com/MohamedAbdullahi2/Timekeeper/assets/118404373/af2e79b8-3c0d-4574-86aa-24d535ff1517">
+
+
+<img width="848" alt="image" src="https://github.com/MohamedAbdullahi2/Timekeeper/assets/118404373/f46c9466-cf15-4f45-acd1-114d084ee7e8">
 
 ## Requirements
 
