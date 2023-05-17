@@ -76,10 +76,14 @@ Team Build
 
 Timekeepers was developed by Team Build, a group of dedicated and skilled developers passionate about creating high-quality web applications. The team members are:
 
-Mohamed Abdullahi 
-Haozhe Huang
-Slava S
-Abenezer Mengesha
-Felix Mandungu
+**Mohamed Abdullahi** 
+
+**Haozhe Huang**
+
+**Slava S**
+
+**Abenezer Mengesha**
+
+**Felix Mandungu**
  
 We worked collaboratively to bring Timekeepers to life. 
