@@ -39,7 +39,7 @@ Before running the application, ensure you have the following requirements insta
 
 ## Usage
 
-Visit http://localhost:3000 in your web browser to access the Timekeepers website.
+Visit https://timekeepers.herokuapp.com/ in your web browser to access the Timekeepers website.
 
 ## Contributing
 
