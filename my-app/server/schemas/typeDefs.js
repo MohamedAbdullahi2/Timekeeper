@@ -15,7 +15,7 @@ const typeDefs = gql`
     image: String
     quantity: Int
     price: Float
-    category: Category
+    category: [Category]
   }
 
   type Order {
@@ -47,7 +47,7 @@ const typeDefs = gql`
     product(_id: ID!): Product
     user: User
     order(_id: ID!): Order
-    checkout(products: [ID]!): Checkout
+    checkout(products: [ID]!): Checkout!
   }
 
   type Mutation {

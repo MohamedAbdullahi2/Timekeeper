@@ -25,7 +25,7 @@
     "react-scripts": "3.4.1",
     "react-simple-chatbot": "^0.6.1",
     "redux": "^4.1.0",
-    "stripe": "^8.146.0"
+    "stripe": "^12.5.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",

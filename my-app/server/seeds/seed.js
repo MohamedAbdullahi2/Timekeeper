@@ -10,17 +10,6 @@ db.once("open", async () => {
       [
           {
             "name": "Casio Edifice",
-            "image": "edifice1.png",
-            "description": "The EFB108D is the newest sport chronograph addition to the Edifice line. Styled with a simple motor sports design, this all stainless steel timepiece is 100 meter water resistant with a 3 year battery.",
-            "price": 138.89,
-            "brand": "Casio",
-            "model": "EFB-108D",
-            "category": ["sport", "quartz", "analog", "classic"],
-            "tags": ["sport", "quartz", "analog", "classic"],
-            "stock": 10
-          },
-          {
-            "name": "Casio Edifice",
             "image": "edifice2.png",
             "description": "Go big with the classic EDIFICE chronograph in a bold pairing of fine detail and oversized design. Inspired by motorsports, these timepieces feature dynamic color combinations and striking inset dials for a style that exudes speed and intelligence. ",
             "price": 118.26,
@@ -28,7 +17,7 @@ db.once("open", async () => {
             "model": "EFV620D",
             "category": ["sport", "quartz", "chronograph", "analog", "fashion"],
             "tags": ["sport", "quartz", "chronograph", "analog", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Casio G Shock",
@@ -39,7 +28,7 @@ db.once("open", async () => {
             "model": "DW5600E",
             "category": ["sport", "quartz", "digital"],
             "tags": ["sport", "quartz", "digital"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Casio G Shock",
@@ -50,7 +39,7 @@ db.once("open", async () => {
             "model": "DWM5610",
             "category": ["sport", "quartz", "digital", "solar"],
             "tags": ["sport", "quartz", "digital", "solar"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Casio G Shock",
@@ -61,7 +50,7 @@ db.once("open", async () => {
             "model": "DWM5610",
             "category": ["sport", "quartz", "digital"],
             "tags": ["sport", "quartz", "digital"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Casio Pro Trek",
@@ -72,7 +61,7 @@ db.once("open", async () => {
             "model": "PRG600",
             "category": ["sport", "quartz", "hybrid", "solar", "gps"],
             "tags": ["sport", "quartz", "hybrid", "solar", "gps"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Citizen Corso",
@@ -83,7 +72,7 @@ db.once("open", async () => {
             "model": "BM7100",
             "category": ["classic", "quartz", "solar", "dress", "analog"],
             "tags": ["classic", "quartz", "solar", "dress", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Citizen Corso",
@@ -94,7 +83,7 @@ db.once("open", async () => {
             "model": "BM7103",
             "category": ["classic", "quartz", "solar", "dress", "analog", "female"],
             "tags": ["classic", "quartz", "solar", "dress", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Citizen Promaster Dive",
@@ -105,7 +94,7 @@ db.once("open", async () => {
             "model": "BN0168",
             "category": ["sport", "quartz", "solar", "analog"],
             "tags": ["sport", "quartz", "solar", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Citizen Promaster Skyhawk",
@@ -116,7 +105,7 @@ db.once("open", async () => {
             "model": "JY8078",
             "category": ["sport", "quartz", "solar", "hybrid", "chronograph"],
             "tags": ["sport", "quartz", "solar", "hybrid", "chronograph"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Fossil HR",
@@ -134,7 +123,7 @@ db.once("open", async () => {
               "fashion"
             ],
             "tags": ["sport", "quartz", "smartwatch", "digital", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Fossil Carlie",
@@ -145,7 +134,7 @@ db.once("open", async () => {
             "model": "ES4699",
             "category": ["classic", "quartz", "analog", "female", "fashion"],
             "tags": ["classic", "quartz", "analog", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Fossil Gen 6",
@@ -164,7 +153,7 @@ db.once("open", async () => {
               "gps"
             ],
             "tags": ["sport", "quartz", "smartwatch", "fashion", "digital", "gps"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Fossil Jacqueline",
@@ -175,7 +164,7 @@ db.once("open", async () => {
             "model": "ES3843",
             "category": ["classic", "quartz", "female", "fashion", "analog"],
             "tags": ["classic", "quartz", "fashion", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Garmin Fenix 6 Pro",
@@ -194,7 +183,7 @@ db.once("open", async () => {
               "gps"
             ],
             "tags": ["sport", "quartz", "fashion", "digital", "smartwatch", "gps"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Garmin Instinct Solar",
@@ -205,7 +194,7 @@ db.once("open", async () => {
             "model": "010-02293-10",
             "category": ["sport", "quartz", "female", "digital", "smartwatch", "gps"],
             "tags": ["sport", "quartz", "digital", "smartwatch", "gps"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Garmin Vivoactive 4s",
@@ -224,7 +213,7 @@ db.once("open", async () => {
               "fashion"
             ],
             "tags": ["sport", "quartz", "digital", "smartwatch", "gps", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Grand Seiko Diver",
@@ -235,7 +224,7 @@ db.once("open", async () => {
             "model": "SBGH289",
             "category": ["sport", "mechanical", "luxury", "analog"],
             "tags": ["sport", "mechanical", "luxury", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Grand Seiko Snowflake",
@@ -246,7 +235,7 @@ db.once("open", async () => {
             "model": "SBGA211",
             "category": ["classic", "mechanical", "luxury", "analog", "dress"],
             "tags": ["classic", "mechanical", "luxury", "analog", "dress"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Grand Seiko Snowflake",
@@ -264,7 +253,7 @@ db.once("open", async () => {
               "dress"
             ],
             "tags": ["classic", "mechanical", "luxury", "analog", "dress"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Michael Kors Parker",
@@ -282,7 +271,7 @@ db.once("open", async () => {
               "analog"
             ],
             "tags": ["classic", "quartz", "fashion", "chronograph", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Michael Kors Ritz",
@@ -300,7 +289,7 @@ db.once("open", async () => {
               "analog"
             ],
             "tags": ["classic", "quartz", "fashion", "chronograph", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Michael Kors Runway",
@@ -311,7 +300,7 @@ db.once("open", async () => {
             "model": "MK3197",
             "category": ["classic", "quartz", "fashion", "female", "analog"],
             "tags": ["classic", "quartz", "fashion", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Michael Kors Runway",
@@ -322,7 +311,7 @@ db.once("open", async () => {
             "model": "MK8507",
             "category": ["classic", "quartz", "fashion", "analog"],
             "tags": ["classic", "quartz", "fashion", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Seiko Alpinist",
@@ -333,7 +322,7 @@ db.once("open", async () => {
             "model": "SPB119",
             "category": ["classic", "mechanical", "analog"],
             "tags": ["classic", "mechanical", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Seiko Cocktail Time",
@@ -344,7 +333,7 @@ db.once("open", async () => {
             "model": "SRPD37",
             "category": ["classic", "mechanical", "analog", "dress"],
             "tags": ["classic", "mechanical", "analog", "dress"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Seiko Cocktail Time",
@@ -355,7 +344,7 @@ db.once("open", async () => {
             "model": "SRRY028",
             "category": ["classic", "mechanical", "analog", "dress", "female"],
             "tags": ["classic", "mechanical", "analog", "dress"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Seiko 5 Diver",
@@ -366,7 +355,7 @@ db.once("open", async () => {
             "model": "SRPD51",
             "category": ["sport", "mechanical", "analog", "fashion"],
             "tags": ["sport", "mechanical", "analog", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Seiko 5 GMT",
@@ -377,7 +366,7 @@ db.once("open", async () => {
             "model": "SSK001",
             "category": ["sport", "mechanical", "analog", "gmt"],
             "tags": ["sport", "mechanical", "analog", "gmt"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Suunto 7",
@@ -396,7 +385,7 @@ db.once("open", async () => {
               "fashion"
             ],
             "tags": ["sport", "quartz", "digital", "gps", "smartwatch", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Suunto Core",
@@ -415,7 +404,7 @@ db.once("open", async () => {
               "fashion"
             ],
             "tags": ["sport", "quartz", "digital", "gps", "smartwatch", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Timex Expedition",
@@ -426,7 +415,7 @@ db.once("open", async () => {
             "model": "T49870GP",
             "category": ["sport", "quartz", "analog"],
             "tags": ["sport", "quartz", "analog"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Timex Metropolitan R",
@@ -444,7 +433,7 @@ db.once("open", async () => {
               "fashion"
             ],
             "tags": ["sport", "quartz", "digital", "smartwatch", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Timex Weekender",
@@ -462,7 +451,7 @@ db.once("open", async () => {
               "fashion"
             ],
             "tags": ["sport", "quartz", "digital", "smartwatch", "fashion"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Tissot Le Locle",
@@ -480,7 +469,7 @@ db.once("open", async () => {
               "luxury"
             ],
             "tags": ["classic", "mechanical", "analog", "dress", "luxury"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Tissot Le Locle",
@@ -491,7 +480,7 @@ db.once("open", async () => {
             "model": "t0064071603300",
             "category": ["classic", "mechanical", "analog", "dress", "luxury"],
             "tags": ["classic", "mechanical", "analog", "dress", "luxury"],
-            "stock": 10
+            "quantity": 10
           },
           {
             "name": "Tissot V8",
@@ -502,7 +491,7 @@ db.once("open", async () => {
             "model": "t1064071605100",
             "category": ["sport", "mechanical", "analog", "luxury"],
             "tags": ["sport", "mechanical", "analog", "luxury"],
-            "stock": 10
+            "quantity": 10
           }
         ]
      

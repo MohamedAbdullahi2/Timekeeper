@@ -4,7 +4,6 @@ const stripe = require('stripe')('sk_test_51MmU36BlbDJj83aqVaJWs5PDTguJH99jtkB4R
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 
-
 const resolvers = {
     Query: {
         categories: async () => {
@@ -53,232 +52,52 @@ const resolvers = {
             }
 
             throw new AuthenticationError('Not logged in');
-
         },
-
         checkout: async (parent, args, context) => {
             const url = new URL(context.headers.referer).origin;
+            const order = new Order({ products: args.products });
 
-            console.log(args)
 
-            // 6462d915c99c09f8dc3fc71b
-
-            // const product = await Product.findById(args.products[0]
-
-            // console.log(products)
-            try {
-            //   const order = await Order.findById(args.orderId).populate('products');
-            const products = await Product.find().where('_id').in(args.products).exec();
-            //   if (!order) {
-            //     throw new Error('Order not found');
-            //   }
-              console.log(products)
-            //   const { products } = order;
-            
-              const line_items = [];
-            
-              for (let i = 0; i < products.length; i++) {
-                const product = await stripe.products.create({
-                  name: products[i].name,
-                  description: products[i].description,
-                  images: [`${url}/images/${products[i].image}`],
-                });
-            
-                const price = await stripe.prices.create({
-                  product: product.id,
-                  unit_amount: products[i].price * 100,
-                  currency: 'usd',
-                });
-            
-                line_items.push({
-                  price: price.id,
-                  quantity: 1,
-                });
-              }
-            
-              const session = await stripe.checkout.sessions.create({
-                payment_method_types: ['card'],
-                line_items,
-                mode: 'payment',
-                success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `${url}/`,
+          
+            // console.log(args.products);
+          
+            const { products } = await order.save();
+          
+            const line_items = [];
+          
+            for (let i = 0; i < products.length; i++) {
+              const product = await stripe.products.create({
+                name: products[i].name,
+                description: products[i].description,
+                images: [`${url}/images/${products[i].image}`],
               });
-            
-              // Redirect to the Stripe checkout session
-              return {
-                session: session.id,
-                // redirectUrl: session.url,
-              };
-            } catch (error) {
-              throw new Error('Error in checkout');
+                //  console.log(products[i].name)
+                    console.log(products[i].description)
+
+              const price = await stripe.prices.create({
+                product: product.id,
+                unit_amount: products[i].price * 100,
+                currency: 'usd',
+              });
+          
+              line_items.push({
+                price: price.id,
+                quantity: 1,
+              });
             }
-          }
-           
-        // checkout: async (parent, args, context) => {
-        //     const url = new URL(context.headers.referer).origin;
           
-        //     try {
-        //       const order = await Order.findById(args.orderId).populate('products');
-            
-        //       if (!order) {
-        //         throw new Error('Order not found');
-        //       }
-            
-        //       const { products } = order;
-            
-        //       const line_items = [];
-            
-        //       for (let i = 0; i < products.length; i++) {
-        //         const product = await stripe.products.create({
-        //           name: products[i].name,
-        //           description: products[i].description,
-        //           images: [`${url}/images/${products[i].image}`],
-        //         });
-            
-        //         const price = await stripe.prices.create({
-        //           product: product.id,
-        //           unit_amount: products[i].price * 100,
-        //           currency: 'usd',
-        //         });
-            
-        //         line_items.push({
-        //           price: price.id,
-        //           quantity: 1,
-        //         });
-        //       }
-            
-        //       const session = await stripe.checkout.sessions.create({
-        //         payment_method_types: ['card'],
-        //         line_items,
-        //         mode: 'payment',
-        //         success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
-        //         cancel_url: `${url}/`,
-        //       });
-            
-        //       // Redirect to the Stripe checkout session
-        //       return {
-        //         session: session.id,
-        //         redirectUrl: session.url,
-        //       };
-        //     } catch (error) {
-        //       throw new Error('Error in checkout');
-        //     }
-        //   }
+            const session = await stripe.checkout.sessions.create({
+              payment_method_types: ['card'],
+              line_items,
+              mode: 'payment',
+              success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
+              cancel_url: `${url}/`,
+            });
           
-        // checkout: async (parent, args, context) => {
-        //     const url = new URL(context.headers.referer).origin;
-        //     const order = new Order({ products: args.products });
+            return { session: session.id };
+          },
+        },
 
-            
-        //     await order.populate('products');
-        //     const { products } = order;
-
-        //     const line_items = [];
-        //     // const { product } = await order.populate('products');
-
-
-
-
-
-
-        //     console.log(order)
-        //     console.log (products)
-        //     for (let i = 0; i < products.length; i++) {
-        //       const product = await stripe.products.create({
-        //         name: products[i].name,
-        //         description: products[i].description,
-        //         images: [`${url}/images/${products[i].image}`]
-        //       });
-      
-        //       const price = await stripe.prices.create({
-        //         product: product.id,
-        //         unit_amount: products[i].price * 100,
-        //         currency: 'usd',
-        //       });
-      
-        //       line_items.push({
-        //         price: price.id,
-        //         quantity: 1
-        //       });
-        //     }
-      
-        //     const session = await stripe.checkout.sessions.create({
-        //       payment_method_types: ['card'],
-        //       line_items,
-        //       mode: 'payment',
-        //       success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
-        //       cancel_url: `${url}/`
-        //     });
-      
-        //     return { session: session.id };
-        //   }
-        // checkout: async (parent, args, context) => {
-        //     const url = new URL(context.headers.referer).origin;
-
-
-        //     // const order = await Order.create({products: args.products[0]});
-        //     // console.log(order)
-
-        //     // const NewOrder= await Order.findOne({_id:order._id});
-        //     const line_items = [];
-        //     const products = []
-        //     console.log(args.products)
-        //       for ( let i = 0; i < args.products.length; i++){
-        //         console.log(args.products[i])
-        //          const product = await Product.findById(args.products[i]) 
-
-        //          const { products } = await product.populate('product');
-
-        //          console.log(products)
-        //       }
-        //     // const products = [
-        //     //     {
-        //     //      name : "watch ",
-        //     //      description : "Hello World",
-        //     //      images : "name.image ",
-        //     //      id : 1,
-        //     //      price : 10,
-
-        //     //     }
-        //     // ]
-
-
-   
-        //      console.log(products)
-        //     //    console.log(products)
-        //     for (let i = 0; i < products.length; i++) {
-        //         // generate product id
-        //         const product = await stripe.products.create({
-        //             name: products[i].name,
-        //             description: products[i].description,
-        //             images: [`${url}/images/${products[i].image}`]
-        //         });
-
-        //         // generate price id using the product id
-        //         const price = await stripe.prices.create({
-        //             product: product.id,
-        //             unit_amount: products[i].price * 100,
-        //             currency: 'usd'
-        //         });
-
-        //         // add price id to the line items array
-        //         line_items.push({
-        //             price: price.id,
-        //             quantity: 1
-        //         });
-        //     } 
-        //        console.log(line_items)
-        //     const session = await stripe.checkout.sessions.create({
-        //         payment_method_types: ['card'],
-        //         line_items,
-        //         mode: 'payment',
-        //         success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
-        //         cancel_url: `${url}/`
-        //     });
-
-        //     return { session: session.id };
-        
-    },
     Mutation: {
         addUser: async (parent, args) => {
             const user = await User.create(args);
@@ -287,7 +106,6 @@ const resolvers = {
             return { token, user };
         },
         addOrder: async (parent, { products }, context) => {
-            
             
             if (context.user) {
                 const order = new Order({ products });

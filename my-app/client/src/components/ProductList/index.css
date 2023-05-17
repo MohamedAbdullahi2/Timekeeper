@@ -122,6 +122,14 @@ display: flex;
   }
   
 
+  .card .image {
+    width:400px;
+    height: 400px;
+    object-fit: contain;
+    box-shadow: #82a3eb;
+
+  }
+
   .btn {
     display: flex;
   justify-content: center;

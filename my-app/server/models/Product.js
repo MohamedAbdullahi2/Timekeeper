@@ -1,52 +1,35 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-// schema for watches, including watch name, which will be showing as the product name, brand and category are for searching purpose, so the user can search by brands and category such as classic, luxury, smartwatch, mechanical, quartz and so on.
-const watchSchema = new mongoose.Schema({
+const { Schema } = mongoose;
+
+const productSchema = new Schema({
   name: {
     type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
+    required: false,
+    trim: true
   },
   description: {
-    type: String,
-    required: true,
+    type: String
+  },
+  image: {
+    type: String
   },
   price: {
     type: Number,
     required: true,
+    min: 0.99
   },
-  brand: {
-    type: String,
-    required: true,
-  },
-  model: {
-    type: String,
-    required: true,
-  },
-  // this category property is used to allow user to search for certain watch feature, eg. classic, luxury, female...
-  // this property will not show on product cards!!
-  category: {
-    type: [String],
-    required: true,
-  },
-  // this tags propery is used to render to the product cards, to let user know some of the watch features
-  tags: {
-    type: [String],
-    required: true,
-  },
-  stock: {
+  quantity: {
     type: Number,
-    required: true,
-    default: 0,
+    min: 0,
+    default: 0
   },
+  category: [{
+    type: String
+  }]
+  
 });
 
-const Product = mongoose.model("Product", watchSchema);
+const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
-
-
-
