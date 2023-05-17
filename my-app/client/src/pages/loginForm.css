@@ -1,9 +1,0 @@
-.flex-row space-between my-2 {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  height: 50vh; /* Optional: set the height of the container to the viewport height */
-  box-shadow: rgb(38, 67, 201);
-  border : 5px solid black;
-}
