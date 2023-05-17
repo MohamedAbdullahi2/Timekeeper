@@ -72,7 +72,8 @@ Open a pull request on the main repository.
 Timekeepers is released under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
 
-Team Build
+
+## Team Build
 
 Timekeepers was developed by Team Build, a group of dedicated and skilled developers passionate about creating high-quality web applications. The team members are:
 
