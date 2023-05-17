@@ -1,6 +1,8 @@
 # Timekeeppers- E-commerce Website
 
- Timekeepers is an e-commerce website built using the MERN stack and GraphQL, designed to provide an exceptional shopping experience for watch enthusiasts. This repository contains all the code and resources required to set up and deploy the TimeKeepers website..
+ Timekeepers is an e-commerce website built using the MERN stack and GraphQL, designed to provide an exceptional shopping experience for watch enthusiasts. This repository contains all the code and resources required to set up and deploy the TimeKeepers website.
+ 
+ [Live Demo](https://timekeepers.herokuapp.com/)
 
 ## Table of Contents
 
@@ -18,6 +20,14 @@
 - Shopping Cart: Users can add watches to their cart, update quantities, and proceed to checkout.
 - Payment Processing: Integration with a secure payment gateway for seamless transactions.
 - Reviews and Ratings: Users can leave reviews and ratings for watches they have purchased.
+
+<img width="899" alt="image" src="https://github.com/MohamedAbdullahi2/Timekeeper/assets/118404373/e02976ae-91e2-417e-935d-7816e90cdb6a">
+
+<img width="918" alt="image" src="https://github.com/MohamedAbdullahi2/Timekeeper/assets/118404373/30444b29-2024-4c3a-a55c-b52bc08f57f4">
+
+<img width="848" alt="image" src="https://github.com/MohamedAbdullahi2/Timekeeper/assets/118404373/a9506df0-43fb-4a3d-90ab-6a4cf10ed7fb">
+
+
 
 ## Requirements
 
