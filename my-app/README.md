@@ -47,7 +47,7 @@ Before running the application, ensure you have the following requirements insta
 
 ## Usage
 
-Visit https://timekeeper-ap.herokuapp.com/ in your web browser to access the Timekeepers website.
+Visit https://timekeepers.herokuapp.com/ in your web browser to access the Timekeepers website.
 
 ## Contributing
 
